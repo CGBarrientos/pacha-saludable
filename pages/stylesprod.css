@@ -46,9 +46,41 @@ body {
   border-right: solid 2px;
   font-size: 1.1rem;
 }
-.header__nav a:nth-child(4) {
-  border-right: solid 1px #59070f;
-}
+/* Menu Hamburguesa ---*/
+.header__nav i {
+    font-size: 30px;
+    display: none;
+  }
+  #menu__burguer {
+    display: none;
+  }
+  /* Responsive----*/
+  @media(max-width: 767px) {
+    .header__nav ul {
+      background-color: #59070f;
+      width: 100%;
+      height: calc(100vh - 100px);
+      position: absolute;
+      top: 100px;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      font-weight: 900;
+      font-size: 1.5rem;
+      display: none;
+      z-index: 5;
+    }
+    .header__nav i {
+      display: block;
+    }
+    #menu__burguer:checked ~ ul {
+      display: flex;
+    }
+  
+  }
+  
 
 /* ----------------Main---------------- */
 main {
@@ -165,7 +197,7 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .socials__icons {
     display: flex;
@@ -192,7 +224,26 @@ main {
     color:#59070f;
     font-weight: 500;
 }
+/* Responsive----*/
+@media(max-width: 766px) {
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .foot__menu ul {
+    text-align: center;
+  }
+  .adress {
+    text-align: center;
+  }
 
+  .socials {
+    order: 3;
+    text-align: center;
+    margin-left: 70px;
+  }
+}
 
 
 
