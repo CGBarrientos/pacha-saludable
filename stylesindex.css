@@ -56,7 +56,7 @@ body {
   display: none;
 }
 /* Responsive----*/
-@media(max-width: 767px) {
+@media(max-width: 766px) {
   .header__nav ul {
     background-color: #59070f;
     width: 100%;

@@ -55,7 +55,7 @@ body {
   display: none;
 }
 /* Responsive----*/
-@media(max-width: 767px) {
+@media(max-width: 766px) {
   .header__nav ul {
     background-color: #59070f;
     width: 100%;
@@ -133,8 +133,34 @@ main {
   gap: 20px;
   flex-wrap: wrap;
   padding: 25px 0;
-
 }
+/* Responsive----*/
+@media(max-width: 766px) {
+  main {
+    margin-left: 0;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main h1 {
+    margin-right: 0;
+    text-align: center;
+  }
+  .main p {
+    text-align: center;
+  }
+  .main h3 {
+    border-bottom: #3c492e 2px solid;
+    border-right: none;
+  }
+  .card__punto {
+    width: 95%;
+  }
+}
+
 /* ----------------Footer---------------- */
 
 .footer__wrapper {
